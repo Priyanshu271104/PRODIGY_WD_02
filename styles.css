@@ -1,0 +1,150 @@
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* Purple gradient background */
+  background: linear-gradient(to right, #8a2be2, #9370db); /* Gradient from deep purple to light purple */
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  transition: all 0.3s ease;
+}
+
+/* Time Display */
+#time-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Buttons Styling */
+button {
+  width: 100%; /* Make the button span the full width */
+  height: 50px; /* Make the button rectangular */
+  font-size: 1.2rem;
+  border-radius: 8px; /* Slightly rounded corners */
+  margin: 10px 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #45a049;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Active effect for buttons */
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled button appearance */
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+/* Lap List Styling */
+#lap-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lap-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.lap-time button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;  /* Adjusted padding to make it rectangular */
+  cursor: pointer;
+  border-radius: 8px;  /* Rectangular button with rounded corners */
+  width: 40%;  /* Make the delete button a smaller, rectangular size */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for lap delete button */
+.lap-time button:hover {
+  background-color: darkred;
+  transform: scale(1.05);  /* Slightly enlarge on hover */
+}
+
+/* Active effect for lap delete button */
+.lap-time button:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and Countdown Button Styling */
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #4CAF50;
+}
+
+#start-countdown-btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ff9800;
+  color: white;
+  border-radius: 8px; /* Match the other buttons */
+  padding: 10px;
+}
+
+#stop-countdown-btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #f44336; /* Red for Stop button */
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Status Message Styling */
+.status-message {
+  font-size: 1.2rem;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+  display: none; /* Hidden by default */
+  text-align: center;
+}

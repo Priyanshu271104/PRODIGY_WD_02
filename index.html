@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch & Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <!-- Stopwatch display area -->
+        <div id="time-display">00:00:00</div>
+
+        <!-- Status message area (for alerts) -->
+        <div id="status-message" class="status-message"></div>
+
+        <!-- Controls for Stopwatch -->
+        <div class="controls">
+            <button id="start-stop-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+            <button id="lap-btn">Lap</button>
+        </div>
+
+        <!-- Countdown timer input and buttons -->
+        <input type="number" id="countdown-input" placeholder="Enter seconds for countdown">
+        <button id="start-countdown-btn">Start Countdown</button>
+        <button id="stop-countdown-btn" disabled>Stop Countdown</button>
+
+        <!-- Lap times list -->
+        <div id="laps">
+            <ul id="lap-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
